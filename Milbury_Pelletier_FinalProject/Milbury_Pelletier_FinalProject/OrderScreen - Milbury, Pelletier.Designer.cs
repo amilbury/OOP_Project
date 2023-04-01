@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderScreen_Milbury_Pelletier));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.cboCarType = new System.Windows.Forms.ComboBox();
+            this.lblCarType = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,28 +57,29 @@
             this.listBox1.Size = new System.Drawing.Size(355, 284);
             this.listBox1.TabIndex = 8;
             // 
-            // comboBox1
+            // cboCarType
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(41, 108);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 28);
-            this.comboBox1.TabIndex = 9;
+            this.cboCarType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCarType.FormattingEnabled = true;
+            this.cboCarType.Location = new System.Drawing.Point(41, 108);
+            this.cboCarType.Name = "cboCarType";
+            this.cboCarType.Size = new System.Drawing.Size(121, 28);
+            this.cboCarType.TabIndex = 9;
             // 
-            // label1
+            // lblCarType
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(37, 72);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "label1";
+            this.lblCarType.AllowDrop = true;
+            this.lblCarType.AutoSize = true;
+            this.lblCarType.Location = new System.Drawing.Point(37, 72);
+            this.lblCarType.Name = "lblCarType";
+            this.lblCarType.Size = new System.Drawing.Size(131, 20);
+            this.lblCarType.TabIndex = 10;
+            this.lblCarType.Text = "Choose Car Type";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(37, 171);
+            this.label2.Location = new System.Drawing.Point(37, 226);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 20);
             this.label2.TabIndex = 11;
@@ -101,8 +102,8 @@
             this.ClientSize = new System.Drawing.Size(946, 566);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.lblCarType);
+            this.Controls.Add(this.cboCarType);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "OrderScreen_Milbury_Pelletier";
@@ -118,8 +119,8 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cboCarType;
+        private System.Windows.Forms.Label lblCarType;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
     }

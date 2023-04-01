@@ -33,9 +33,7 @@
             this.txtPSW = new System.Windows.Forms.TextBox();
             this.lblID = new System.Windows.Forms.Label();
             this.lblPSW = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,6 +50,7 @@
             this.txtPSW.Location = new System.Drawing.Point(237, 384);
             this.txtPSW.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtPSW.Name = "txtPSW";
+            this.txtPSW.PasswordChar = '*';
             this.txtPSW.Size = new System.Drawing.Size(418, 35);
             this.txtPSW.TabIndex = 1;
             // 
@@ -75,14 +74,6 @@
             this.lblPSW.TabIndex = 3;
             this.lblPSW.Text = "Password";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(215, 121);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(8, 8);
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -100,7 +91,6 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(937, 1003);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lblPSW);
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.txtPSW);
@@ -110,7 +100,6 @@
             this.Name = "LoginScreen_Milbury_Pelletier";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginScreen_Milbury_Pelletier";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -123,7 +112,6 @@
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.Label lblPSW;
         private System.Windows.Forms.TextBox txtPSW;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Customer.cs" />
     <Compile Include="LoginScreen_Milbury_Pelletier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +68,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Validator.cs" />
+    <Compile Include="Users.cs" />
     <EmbeddedResource Include="CheckoutForm_Milbury_Pelletier.resx">
       <DependentUpon>CheckoutForm_Milbury_Pelletier.cs</DependentUpon>
     </EmbeddedResource>
