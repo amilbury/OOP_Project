@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin.cs" />
+    <Compile Include="Cars.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="LoginScreen_Milbury_Pelletier.cs">
       <SubType>Form</SubType>
@@ -60,12 +61,14 @@
     <Compile Include="CheckoutForm_Milbury_Pelletier.Designer.cs">
       <DependentUpon>CheckoutForm_Milbury_Pelletier.cs</DependentUpon>
     </Compile>
+    <Compile Include="LuxuryCar.cs" />
     <Compile Include="OrderScreen - Milbury, Pelletier.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="OrderScreen - Milbury, Pelletier.Designer.cs">
       <DependentUpon>OrderScreen - Milbury, Pelletier.cs</DependentUpon>
     </Compile>
+    <Compile Include="Products.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Validator.cs" />
