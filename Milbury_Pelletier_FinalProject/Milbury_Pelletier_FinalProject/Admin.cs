@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Milbury_Pelletier_FinalProject
 {
-    internal class Admin
+    public class Admin : Users
     {
+
+        
+
     }
 }
