@@ -1,0 +1,13 @@
+C:\Users\amilb\OneDrive\Documents\GitHub\JS-A2\OOP_Project\Milbury_Pelletier_FinalProject\Milbury_Pelletier_FinalProject\bin\Debug\Milbury_Pelletier_FinalProject.exe.config
+C:\Users\amilb\OneDrive\Documents\GitHub\JS-A2\OOP_Project\Milbury_Pelletier_FinalProject\Milbury_Pelletier_FinalProject\bin\Debug\Milbury_Pelletier_FinalProject.exe
+C:\Users\amilb\OneDrive\Documents\GitHub\JS-A2\OOP_Project\Milbury_Pelletier_FinalProject\Milbury_Pelletier_FinalProject\bin\Debug\Milbury_Pelletier_FinalProject.pdb
+C:\Users\amilb\OneDrive\Documents\GitHub\JS-A2\OOP_Project\Milbury_Pelletier_FinalProject\Milbury_Pelletier_FinalProject\obj\Debug\Milbury_Pelletier_FinalProject.csproj.AssemblyReference.cache
+C:\Users\amilb\OneDrive\Documents\GitHub\JS-A2\OOP_Project\Milbury_Pelletier_FinalProject\Milbury_Pelletier_FinalProject\obj\Debug\Milbury_Pelletier_FinalProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\amilb\OneDrive\Documents\GitHub\JS-A2\OOP_Project\Milbury_Pelletier_FinalProject\Milbury_Pelletier_FinalProject\obj\Debug\Milbury_Pelletier_FinalProject.CheckoutForm_Milbury_Pelletier.resources
+C:\Users\amilb\OneDrive\Documents\GitHub\JS-A2\OOP_Project\Milbury_Pelletier_FinalProject\Milbury_Pelletier_FinalProject\obj\Debug\Milbury_Pelletier_FinalProject.LoginScreen_Milbury_Pelletier.resources
+C:\Users\amilb\OneDrive\Documents\GitHub\JS-A2\OOP_Project\Milbury_Pelletier_FinalProject\Milbury_Pelletier_FinalProject\obj\Debug\Milbury_Pelletier_FinalProject.OrderScreen_Milbury_Pelletier.resources
+C:\Users\amilb\OneDrive\Documents\GitHub\JS-A2\OOP_Project\Milbury_Pelletier_FinalProject\Milbury_Pelletier_FinalProject\obj\Debug\Milbury_Pelletier_FinalProject.Properties.Resources.resources
+C:\Users\amilb\OneDrive\Documents\GitHub\JS-A2\OOP_Project\Milbury_Pelletier_FinalProject\Milbury_Pelletier_FinalProject\obj\Debug\Milbury_Pelletier_FinalProject.csproj.GenerateResource.cache
+C:\Users\amilb\OneDrive\Documents\GitHub\JS-A2\OOP_Project\Milbury_Pelletier_FinalProject\Milbury_Pelletier_FinalProject\obj\Debug\Milbury_Pelletier_FinalProject.csproj.CoreCompileInputs.cache
+C:\Users\amilb\OneDrive\Documents\GitHub\JS-A2\OOP_Project\Milbury_Pelletier_FinalProject\Milbury_Pelletier_FinalProject\obj\Debug\Milbury_Pelletier_FinalProject.exe
+C:\Users\amilb\OneDrive\Documents\GitHub\JS-A2\OOP_Project\Milbury_Pelletier_FinalProject\Milbury_Pelletier_FinalProject\obj\Debug\Milbury_Pelletier_FinalProject.pdb

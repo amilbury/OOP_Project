@@ -16,7 +16,7 @@ namespace Milbury_Pelletier_FinalProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new LoginScreen_Milbury_Pelletier());
         }
     }
 }
