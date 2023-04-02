@@ -34,6 +34,7 @@
             this.lblID = new System.Windows.Forms.Label();
             this.lblPSW = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCreate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,12 +85,22 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // btnCreate
+            // 
+            this.btnCreate.Location = new System.Drawing.Point(303, 462);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(271, 41);
+            this.btnCreate.TabIndex = 7;
+            this.btnCreate.Text = "Create a new account";
+            this.btnCreate.UseVisualStyleBackColor = true;
+            // 
             // LoginScreen_Milbury_Pelletier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(937, 1003);
+            this.ClientSize = new System.Drawing.Size(937, 607);
+            this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblPSW);
             this.Controls.Add(this.lblID);
@@ -113,6 +124,7 @@
         private System.Windows.Forms.Label lblPSW;
         private System.Windows.Forms.TextBox txtPSW;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnCreate;
     }
 }
 
