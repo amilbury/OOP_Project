@@ -79,6 +79,7 @@
             this.btncreateUser.TabIndex = 4;
             this.btncreateUser.Text = "Create New User";
             this.btncreateUser.UseVisualStyleBackColor = true;
+            this.btncreateUser.Click += new System.EventHandler(this.btncreateUser_Click);
             // 
             // btncancelProcess
             // 

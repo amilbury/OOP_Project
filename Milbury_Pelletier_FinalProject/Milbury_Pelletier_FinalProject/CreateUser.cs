@@ -12,9 +12,18 @@ namespace Milbury_Pelletier_FinalProject
 {
     public partial class CreateUser : Form
     {
+        public static CreateUser userInstance;
         public CreateUser()
         {
             InitializeComponent();
+        }
+
+        private void btncreateUser_Click(object sender, EventArgs e)
+        {
+
+            Form createUserInstance = new Form();
+            createUserInstance = this;
+
         }
     }
 }

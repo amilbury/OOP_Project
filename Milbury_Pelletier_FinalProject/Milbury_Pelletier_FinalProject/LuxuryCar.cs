@@ -17,6 +17,7 @@ namespace Milbury_Pelletier_FinalProject
         public override string ToString()
         {
             string luxoryCar = base.ToString() + "Tier: " + Tier;
+            return luxoryCar;
         }
 
     }

@@ -43,7 +43,7 @@
             this.txtID.Location = new System.Drawing.Point(237, 178);
             this.txtID.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(418, 35);
+            this.txtID.Size = new System.Drawing.Size(418, 26);
             this.txtID.TabIndex = 0;
             // 
             // txtPSW
@@ -52,7 +52,7 @@
             this.txtPSW.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtPSW.Name = "txtPSW";
             this.txtPSW.PasswordChar = '*';
-            this.txtPSW.Size = new System.Drawing.Size(418, 35);
+            this.txtPSW.Size = new System.Drawing.Size(418, 26);
             this.txtPSW.TabIndex = 1;
             // 
             // lblID
@@ -61,7 +61,7 @@
             this.lblID.Location = new System.Drawing.Point(231, 103);
             this.lblID.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(36, 29);
+            this.lblID.Size = new System.Drawing.Size(26, 20);
             this.lblID.TabIndex = 2;
             this.lblID.Text = "ID";
             // 
@@ -71,7 +71,7 @@
             this.lblPSW.Location = new System.Drawing.Point(231, 330);
             this.lblPSW.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblPSW.Name = "lblPSW";
-            this.lblPSW.Size = new System.Drawing.Size(120, 29);
+            this.lblPSW.Size = new System.Drawing.Size(78, 20);
             this.lblPSW.TabIndex = 3;
             this.lblPSW.Text = "Password";
             // 
@@ -93,10 +93,11 @@
             this.btnCreate.TabIndex = 7;
             this.btnCreate.Text = "Create a new account";
             this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // LoginScreen_Milbury_Pelletier
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(937, 607);
