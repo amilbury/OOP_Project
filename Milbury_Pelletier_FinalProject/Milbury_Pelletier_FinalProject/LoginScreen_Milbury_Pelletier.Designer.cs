@@ -104,6 +104,7 @@
             this.btnLogin.TabIndex = 8;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // LoginScreen_Milbury_Pelletier
             // 
@@ -123,6 +124,7 @@
             this.Name = "LoginScreen_Milbury_Pelletier";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginScreen_Milbury_Pelletier";
+            this.Load += new System.EventHandler(this.LoginScreen_Milbury_Pelletier_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

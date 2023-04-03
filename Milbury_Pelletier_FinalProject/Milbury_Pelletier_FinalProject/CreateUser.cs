@@ -19,20 +19,22 @@ namespace Milbury_Pelletier_FinalProject
             InitializeComponent();
         }
         //create new customer object and fill with values from new form, then add to list 
-        public Customer newCustomer = new Customer();
+
 
         private void btncreateUser_Click(object sender, EventArgs e)
         {
-            int userTag = Convert.ToInt32(txtUsername.Text);
-            string passTag = txtPassword.Text;
-            newCustomer.UserID = userTag;
-            newCustomer.Password = passTag;
-            this.Close();
+            if(txtPassword.Text != "" && txtUsername.Text != "")
+            {
+                Customer newCustomer = new Customer(txtUsername.Text, txtPassword.Text, "Customer");
+                Tag = newCustomer;
+                this.Close();
+            }
         }
 
         private void btncancelProcess_Click(object sender, EventArgs e)
         {
             this.Close();
+            Tag = null;
         }
     }
 }

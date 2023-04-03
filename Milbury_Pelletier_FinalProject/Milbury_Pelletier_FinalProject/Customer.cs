@@ -11,9 +11,8 @@ namespace Milbury_Pelletier_FinalProject
     {
         public Customer() { }
 
-        public Customer(int inUserID, string inUsername, string inPassword, string inAccessLevel)
+        public Customer(string inUsername, string inPassword, string inAccessLevel)
         {
-            UserID = inUserID;
             Username = inUsername;
             Password = inPassword;
             AccessLevel = inAccessLevel;    

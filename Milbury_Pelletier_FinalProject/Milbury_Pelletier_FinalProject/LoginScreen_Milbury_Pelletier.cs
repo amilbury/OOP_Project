@@ -21,22 +21,44 @@ namespace Milbury_Pelletier_FinalProject
         private void btnCreate_Click(object sender, EventArgs e)
         {
             OpenForm();
-        
         }
 
         //open form function 
-        private string OpenForm()
+        private Customer OpenForm()
         {
             //This function will open the second form and return the value sent back from it
             CreateUser createUser = new CreateUser();
-
             createUser.ShowDialog();
-            createUser.newCustomer.Username = this.txtUsername.Text;
-            createUser.newCustomer.Password = this.txtPassword.Text;
-            createUser.newCustomer.AccessLevel = "Customer";
-            return (int)createUser.Tag;
+            if (createUser.Tag == null)
+            {
+
+            }
+            else
+            {
+                Customer tagCust = (Customer)createUser.Tag;
+                userList.Add(tagCust);
+                return tagCust;
+            }
+            return null;
+
+        }
+        public List<Users> userList = new List<Users>();
+        private void LoginScreen_Milbury_Pelletier_Load(object sender, EventArgs e)
+        {
+            Customer cathy = new Customer("cathy", "cathy", "Customer");
+            Admin admin = new Admin("admin", "admin", "Admin");
+            userList.Add(cathy);
+            userList.Add(admin);
+
+
         }
 
-
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if(txtID.Text != "" && txtPSW.Text != "")
+            {
+                
+            }
+        }
     }
 }
