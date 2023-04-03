@@ -43,6 +43,7 @@
             this.txtUsername.PasswordChar = '*';
             this.txtUsername.Size = new System.Drawing.Size(194, 20);
             this.txtUsername.TabIndex = 0;
+            this.txtUsername.Tag = "Usertag";
             this.txtUsername.UseSystemPasswordChar = true;
             // 
             // label1
@@ -69,6 +70,7 @@
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(194, 20);
             this.txtPassword.TabIndex = 3;
+            this.txtPassword.Tag = "Passtag";
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // btncreateUser
@@ -89,6 +91,7 @@
             this.btncancelProcess.TabIndex = 5;
             this.btncancelProcess.Text = "Cancel Process";
             this.btncancelProcess.UseVisualStyleBackColor = true;
+            this.btncancelProcess.Click += new System.EventHandler(this.btncancelProcess_Click);
             // 
             // CreateUser
             // 
