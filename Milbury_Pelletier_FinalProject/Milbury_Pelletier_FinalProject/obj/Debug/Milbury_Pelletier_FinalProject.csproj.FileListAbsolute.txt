@@ -25,3 +25,4 @@ C:\Users\elect\OneDrive\Desktop\OOP_Project\Milbury_Pelletier_FinalProject\Milbu
 C:\Users\elect\OneDrive\Desktop\OOP_Project\Milbury_Pelletier_FinalProject\Milbury_Pelletier_FinalProject\bin\Debug\Milbury_Pelletier_FinalProject.exe.config
 C:\Users\elect\OneDrive\Desktop\OOP_Project\Milbury_Pelletier_FinalProject\Milbury_Pelletier_FinalProject\bin\Debug\Milbury_Pelletier_FinalProject.exe
 C:\Users\elect\OneDrive\Desktop\OOP_Project\Milbury_Pelletier_FinalProject\Milbury_Pelletier_FinalProject\bin\Debug\Milbury_Pelletier_FinalProject.pdb
+C:\Users\amilb\OneDrive\Documents\GitHub\JS-A2\OOP_Project\Milbury_Pelletier_FinalProject\Milbury_Pelletier_FinalProject\obj\Debug\Milbury_Pelletier_FinalProject.CreateUser.resources

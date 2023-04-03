@@ -20,6 +20,7 @@ namespace Milbury_Pelletier_FinalProject
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
+            OpenForm();
         
         }
 

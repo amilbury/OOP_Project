@@ -35,6 +35,7 @@
             this.lblPSW = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCreate = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,7 +44,7 @@
             this.txtID.Location = new System.Drawing.Point(237, 178);
             this.txtID.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(418, 26);
+            this.txtID.Size = new System.Drawing.Size(418, 30);
             this.txtID.TabIndex = 0;
             // 
             // txtPSW
@@ -52,7 +53,7 @@
             this.txtPSW.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtPSW.Name = "txtPSW";
             this.txtPSW.PasswordChar = '*';
-            this.txtPSW.Size = new System.Drawing.Size(418, 26);
+            this.txtPSW.Size = new System.Drawing.Size(418, 30);
             this.txtPSW.TabIndex = 1;
             // 
             // lblID
@@ -61,7 +62,7 @@
             this.lblID.Location = new System.Drawing.Point(231, 103);
             this.lblID.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(26, 20);
+            this.lblID.Size = new System.Drawing.Size(31, 25);
             this.lblID.TabIndex = 2;
             this.lblID.Text = "ID";
             // 
@@ -71,7 +72,7 @@
             this.lblPSW.Location = new System.Drawing.Point(231, 330);
             this.lblPSW.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblPSW.Name = "lblPSW";
-            this.lblPSW.Size = new System.Drawing.Size(78, 20);
+            this.lblPSW.Size = new System.Drawing.Size(98, 25);
             this.lblPSW.TabIndex = 3;
             this.lblPSW.Text = "Password";
             // 
@@ -87,7 +88,7 @@
             // 
             // btnCreate
             // 
-            this.btnCreate.Location = new System.Drawing.Point(303, 462);
+            this.btnCreate.Location = new System.Drawing.Point(306, 498);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(271, 41);
             this.btnCreate.TabIndex = 7;
@@ -95,12 +96,22 @@
             this.btnCreate.UseVisualStyleBackColor = true;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
+            // btnLogin
+            // 
+            this.btnLogin.Location = new System.Drawing.Point(306, 432);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(271, 41);
+            this.btnLogin.TabIndex = 8;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            // 
             // LoginScreen_Milbury_Pelletier
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(937, 607);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblPSW);
@@ -126,6 +137,7 @@
         private System.Windows.Forms.TextBox txtPSW;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnCreate;
+        private System.Windows.Forms.Button btnLogin;
     }
 }
 
