@@ -57,8 +57,13 @@ namespace Milbury_Pelletier_FinalProject
         {
             if(txtID.Text != "" && txtPSW.Text != "")
             {
-                
+                Customer newCustomer = new Customer(txtID.Text, txtPSW.Text, "Customer");
+                userList.Add(newCustomer);
+
+                this.Close();
             }
+
+            
         }
     }
 }

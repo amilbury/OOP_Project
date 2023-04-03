@@ -40,11 +40,9 @@
             // 
             this.txtUsername.Location = new System.Drawing.Point(192, 51);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.PasswordChar = '*';
             this.txtUsername.Size = new System.Drawing.Size(194, 20);
             this.txtUsername.TabIndex = 0;
             this.txtUsername.Tag = "Usertag";
-            this.txtUsername.UseSystemPasswordChar = true;
             // 
             // label1
             // 
