@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginScreen_Milbury_Pelletier));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderScreen_Milbury_Pelletier));
             this.txtID = new System.Windows.Forms.TextBox();
             this.txtPSW = new System.Windows.Forms.TextBox();
             this.lblID = new System.Windows.Forms.Label();
