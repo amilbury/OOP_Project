@@ -53,9 +53,9 @@ namespace Milbury_Pelletier_FinalProject
             
         }
 
-        public Products GrabProducts() {
+        public List<Products> GrabProducts() {
             // create the array
-            Products[] productArray;
+            List<Products> products = new List<Products>();
 
             // create the XmlReaderSettings object
             XmlReaderSettings settings = new XmlReaderSettings();
@@ -79,7 +79,7 @@ namespace Milbury_Pelletier_FinalProject
                         xmlIn.ReadElementContentAsString();
                     product.Model =
                         xmlIn.ReadElementContentAsString();
-                    productArray.Add(product);
+                    products.Add(product);
                 }
                 while (xmlIn.ReadToNextSibling("Products"));
             }
@@ -87,7 +87,7 @@ namespace Milbury_Pelletier_FinalProject
 // close the XmlReader object
             xmlIn.Close();
 
-            return productArray;
+            return products;
         }
     }
 }
