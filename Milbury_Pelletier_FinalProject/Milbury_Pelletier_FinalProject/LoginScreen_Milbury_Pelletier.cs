@@ -57,10 +57,15 @@ namespace Milbury_Pelletier_FinalProject
         {
             if(txtID.Text != "" && txtPSW.Text != "")
             {
-                Customer newCustomer = new Customer(txtID.Text, txtPSW.Text, "Customer");
-                userList.Add(newCustomer);
-
-                this.Close();
+                for(int i = 0; i < userList.Count; i++)
+                {
+                    if (userList[i].Username == txtID.Text && userList[i].Password == txtPSW.Text)
+                    {
+                        OrderScreen_Milbury_Pelletier orderScreen = new OrderScreen_Milbury_Pelletier();
+                        orderScreen.ShowDialog();
+                        this.Close();
+                    }
+                }
             }
 
             
