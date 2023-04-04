@@ -9,6 +9,8 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Xml;
 
 namespace Milbury_Pelletier_FinalProject
 {
@@ -51,7 +53,6 @@ namespace Milbury_Pelletier_FinalProject
             
         }
 
-<<<<<<< Updated upstream
         public List<Products> GrabProducts() {
             // create the array
             List<Products> products = new List<Products>();
@@ -72,7 +73,7 @@ namespace Milbury_Pelletier_FinalProject
                 {
                     Products product = new Products();
                     xmlIn.ReadStartElement("Products");
-                    product.Price = 
+                    product.Price =
                         xmlIn.ReadElementContentAsDecimal();
                     product.Make =
                         xmlIn.ReadElementContentAsString();
@@ -83,15 +84,9 @@ namespace Milbury_Pelletier_FinalProject
                 while (xmlIn.ReadToNextSibling("Products"));
             }
 
-// close the XmlReader object
+            // close the XmlReader object
             xmlIn.Close();
 
-=======
-        public Products GetProducts()
-        {
-            Products products = new Products();
-
->>>>>>> Stashed changes
             return products;
         }
     }
