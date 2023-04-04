@@ -10,12 +10,12 @@ namespace ProductMaintenance
 {
     public static class ProductDB
     {
-        private const string Path = @"..\..\Products.xml";
+        private const string Path = @"..\..\Cars.xml";
 
-        public static List<Product> GetProducts()
+        public static List<Cars> GetProducts()
         {
             // create the list
-            List<Product> products = new List<Product>();
+            List<Cars> products = new List<Cars>();
 
             // create the XmlReaderSettings object
             XmlReaderSettings settings = new XmlReaderSettings();
@@ -31,7 +31,7 @@ namespace ProductMaintenance
                 // create one Product object for each Product node
                 do
                 {
-                    Products product = new Products();
+                    Cars product = new Cars();
                     xmlIn.ReadStartElement("Product");
                     product.Code = 
                         Convert.ToInt32(xmlIn.ReadElementContentAsString());
@@ -39,6 +39,8 @@ namespace ProductMaintenance
                         xmlIn.ReadElementContentAsString();
                     product.Price =
                         xmlIn.ReadElementContentAsDecimal();
+                    product.Transmission = xmlIn.ReadElementContentAsString();
+                    product.Type = xmlIn.ReadElementContentAsString();
                     products.Add(product);
                 }
                 while (xmlIn.ReadToNextSibling("Product"));
@@ -50,7 +52,7 @@ namespace ProductMaintenance
             return products;
         }
 
-        public static void SaveProducts(List<Product> products)
+        public static void SaveProducts(List<Cars> cars)
         {
             // create the XmlWriterSettings object
             XmlWriterSettings settings = new XmlWriterSettings();
@@ -62,17 +64,25 @@ namespace ProductMaintenance
 
             // write the start of the document
             xmlOut.WriteStartDocument();
-            xmlOut.WriteStartElement("Products");
+            xmlOut.WriteStartElement("Cars");
 
             // write each product object to the xml file
-            foreach (Product product in products)
+            foreach (Cars product in cars)
             {
                 xmlOut.WriteStartElement("Product");
-                xmlOut.WriteElementString("Code",
-                    product.Code);
-                xmlOut.WriteElementString("Description",
+                xmlOut.WriteElementString("Code: ",
+                    product.Code.ToString());
+                xmlOut.WriteElementString("Description: ",
                     product.Description);
-                xmlOut.WriteElementString("Price",
+                xmlOut.WriteElementString("Make: ",
+                    product.Make);
+                xmlOut.WriteElementString("Model: ",
+                    product.Model);
+                xmlOut.WriteElementString("Transmission: ",
+                    product.Transmission);
+                xmlOut.WriteElementString("Gears: ",
+                    product.Gears.ToString());
+                xmlOut.WriteElementString("Price: ",
                     Convert.ToString(product.Price));
                 xmlOut.WriteEndElement();
             }

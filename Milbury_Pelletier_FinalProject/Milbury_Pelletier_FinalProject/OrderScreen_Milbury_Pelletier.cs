@@ -52,42 +52,5 @@ namespace Milbury_Pelletier_FinalProject
             LoginScreen_Milbury_Pelletier loginScreen = new LoginScreen_Milbury_Pelletier();
             
         }
-
-        public List<Products> GrabProducts() {
-            // create the array
-            List<Products> products = new List<Products>();
-
-            // create the XmlReaderSettings object
-            XmlReaderSettings settings = new XmlReaderSettings();
-            settings.IgnoreWhitespace = true;
-            settings.IgnoreComments = true;
-
-            // create the XmlReader object
-            XmlReader xmlIn = XmlReader.Create(Path, settings);
-
-            // read past all nodes to the first Product node
-            if (xmlIn.ReadToDescendant("Products"))
-            {
-                // create one Product object for each Product node
-                do
-                {
-                    Products product = new Products();
-                    xmlIn.ReadStartElement("Products");
-                    product.Price =
-                        xmlIn.ReadElementContentAsDecimal();
-                    product.Make =
-                        xmlIn.ReadElementContentAsString();
-                    product.Model =
-                        xmlIn.ReadElementContentAsString();
-                    products.Add(product);
-                }
-                while (xmlIn.ReadToNextSibling("Products"));
-            }
-
-            // close the XmlReader object
-            xmlIn.Close();
-
-            return products;
-        }
     }
 }
