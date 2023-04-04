@@ -12,6 +12,7 @@ namespace Milbury_Pelletier_FinalProject
         public int code;
         public string description;
         public decimal price;
+        public string Make, Model;
 
         public int Code { get; set; }
 
