@@ -75,17 +75,18 @@
             // 
             this.cboCarType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCarType.FormattingEnabled = true;
-            this.cboCarType.Location = new System.Drawing.Point(132, 70);
+            this.cboCarType.Location = new System.Drawing.Point(117, 70);
             this.cboCarType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboCarType.Name = "cboCarType";
-            this.cboCarType.Size = new System.Drawing.Size(108, 24);
+            this.cboCarType.Size = new System.Drawing.Size(139, 24);
             this.cboCarType.TabIndex = 9;
+            this.cboCarType.SelectedIndexChanged += new System.EventHandler(this.cboCarType_SelectedIndexChanged);
             // 
             // lblCarType
             // 
             this.lblCarType.AllowDrop = true;
             this.lblCarType.AutoSize = true;
-            this.lblCarType.Location = new System.Drawing.Point(129, 42);
+            this.lblCarType.Location = new System.Drawing.Point(131, 42);
             this.lblCarType.Name = "lblCarType";
             this.lblCarType.Size = new System.Drawing.Size(113, 16);
             this.lblCarType.TabIndex = 10;
@@ -224,6 +225,7 @@
             this.btnLogout.TabIndex = 18;
             this.btnLogout.Text = "&Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // OrderScreen_Milbury_Pelletier
             // 

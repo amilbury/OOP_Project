@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderScreen_Milbury_Pelletier));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginScreen_Milbury_Pelletier));
             this.txtID = new System.Windows.Forms.TextBox();
             this.txtPSW = new System.Windows.Forms.TextBox();
             this.lblID = new System.Windows.Forms.Label();
@@ -41,25 +41,25 @@
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(237, 178);
+            this.txtID.Location = new System.Drawing.Point(254, 119);
             this.txtID.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(418, 30);
+            this.txtID.Size = new System.Drawing.Size(390, 30);
             this.txtID.TabIndex = 0;
             // 
             // txtPSW
             // 
-            this.txtPSW.Location = new System.Drawing.Point(237, 384);
+            this.txtPSW.Location = new System.Drawing.Point(253, 261);
             this.txtPSW.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtPSW.Name = "txtPSW";
             this.txtPSW.PasswordChar = '*';
-            this.txtPSW.Size = new System.Drawing.Size(418, 30);
+            this.txtPSW.Size = new System.Drawing.Size(390, 30);
             this.txtPSW.TabIndex = 1;
             // 
             // lblID
             // 
             this.lblID.AutoSize = true;
-            this.lblID.Location = new System.Drawing.Point(231, 103);
+            this.lblID.Location = new System.Drawing.Point(248, 44);
             this.lblID.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(31, 25);
@@ -69,7 +69,7 @@
             // lblPSW
             // 
             this.lblPSW.AutoSize = true;
-            this.lblPSW.Location = new System.Drawing.Point(231, 330);
+            this.lblPSW.Location = new System.Drawing.Point(248, 209);
             this.lblPSW.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblPSW.Name = "lblPSW";
             this.lblPSW.Size = new System.Drawing.Size(98, 25);
@@ -88,9 +88,9 @@
             // 
             // btnCreate
             // 
-            this.btnCreate.Location = new System.Drawing.Point(306, 498);
+            this.btnCreate.Location = new System.Drawing.Point(323, 371);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(271, 41);
+            this.btnCreate.Size = new System.Drawing.Size(243, 35);
             this.btnCreate.TabIndex = 7;
             this.btnCreate.Text = "Create a new account";
             this.btnCreate.UseVisualStyleBackColor = true;
@@ -98,9 +98,9 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(306, 432);
+            this.btnLogin.Location = new System.Drawing.Point(323, 312);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(271, 41);
+            this.btnLogin.Size = new System.Drawing.Size(243, 35);
             this.btnLogin.TabIndex = 8;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -111,7 +111,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(937, 607);
+            this.ClientSize = new System.Drawing.Size(937, 452);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.pictureBox1);
