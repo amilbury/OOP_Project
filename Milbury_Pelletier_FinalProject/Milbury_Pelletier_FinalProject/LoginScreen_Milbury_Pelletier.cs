@@ -61,7 +61,7 @@ namespace Milbury_Pelletier_FinalProject
                 {
                     if (userList[i].Username == txtID.Text && userList[i].Password == txtPSW.Text)
                     {
-                        OrderScreen_Milbury_Pelletier orderScreen = new OrderScreen_Milbury_Pelletier();
+                        btnHideProduct orderScreen = new btnHideProduct();
                         orderScreen.ShowDialog();
                         this.Close();
                     }

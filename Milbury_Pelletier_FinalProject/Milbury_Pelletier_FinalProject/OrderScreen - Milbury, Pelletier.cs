@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Milbury_Pelletier_FinalProject
 {
-    public partial class OrderScreen_Milbury_Pelletier : Form
+    public partial class btnHideProduct : Form
     {
-        public OrderScreen_Milbury_Pelletier()
+        public btnHideProduct()
         {
             InitializeComponent();
         }
