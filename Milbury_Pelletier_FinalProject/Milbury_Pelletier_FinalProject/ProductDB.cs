@@ -64,7 +64,7 @@ namespace ProductMaintenance
 
             // write the start of the document
             xmlOut.WriteStartDocument();
-            xmlOut.WriteStartElement("Cars");
+            xmlOut.WriteStartElement("Product");
 
             // write each product object to the xml file
             foreach (Cars product in cars)
