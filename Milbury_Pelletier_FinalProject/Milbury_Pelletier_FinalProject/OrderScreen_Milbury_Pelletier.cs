@@ -1,5 +1,4 @@
-﻿using Milbury_Pelletier_FinalProject;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +9,6 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml;
 
 namespace Milbury_Pelletier_FinalProject
 {
@@ -53,6 +51,7 @@ namespace Milbury_Pelletier_FinalProject
             
         }
 
+<<<<<<< Updated upstream
         public List<Products> GrabProducts() {
             // create the array
             List<Products> products = new List<Products>();
@@ -87,6 +86,12 @@ namespace Milbury_Pelletier_FinalProject
 // close the XmlReader object
             xmlIn.Close();
 
+=======
+        public Products GetProducts()
+        {
+            Products products = new Products();
+
+>>>>>>> Stashed changes
             return products;
         }
     }

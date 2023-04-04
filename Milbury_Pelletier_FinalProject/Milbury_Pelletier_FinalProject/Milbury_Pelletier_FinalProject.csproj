@@ -74,6 +74,7 @@
     <Compile Include="OrderScreen_Milbury_Pelletier.Designer.cs">
       <DependentUpon>OrderScreen_Milbury_Pelletier.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProductDB.cs" />
     <Compile Include="Products.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
