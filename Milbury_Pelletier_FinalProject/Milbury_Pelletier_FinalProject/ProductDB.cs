@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Xml;
 using System.Threading.Tasks;
+using Milbury_Pelletier_FinalProject;
 
 namespace ProductMaintenance
 {
@@ -30,10 +31,10 @@ namespace ProductMaintenance
                 // create one Product object for each Product node
                 do
                 {
-                    Product product = new Product();
+                    Products product = new Products();
                     xmlIn.ReadStartElement("Product");
                     product.Code = 
-                        xmlIn.ReadElementContentAsString();
+                        Convert.ToInt32(xmlIn.ReadElementContentAsString());
                     product.Description =
                         xmlIn.ReadElementContentAsString();
                     product.Price =
