@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Milbury_Pelletier_FinalProject
 {
-    public class Products
+    public abstract class Products
     {
 
         public int code;
@@ -29,19 +29,6 @@ namespace Milbury_Pelletier_FinalProject
             else price = 0.0m;
             }
         }
-
-        public Products()
-        {
-
-        }
-
-        public Products(int inCode, string inDescription, decimal inPrice)
-        {
-            Code = inCode;
-            Description = inDescription;
-            Price = inPrice;
-        }
-
 
     }
 }
