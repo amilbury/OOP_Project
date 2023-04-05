@@ -17,16 +17,14 @@ namespace Milbury_Pelletier_FinalProject
         {
             InitializeComponent();
         }
-        List<Cars> checkoutCart = new List<Cars>();
-        public string Data = this.Tag;
+
         private void CheckoutForm_Milbury_Pelletier_Load(object sender, EventArgs e)
         {
-
-            for (int i = 0; i < checkoutCart.Count; i++)
+            List<Cars> cars = (List<Cars>)this.Tag;
+            for (int i = 0; i < cars.Count; i++)
             {
-
+                lstCheckout.Items.Add(cars[i]);
             }
-            checkoutCart.Add(Data);
         }
     }
 }

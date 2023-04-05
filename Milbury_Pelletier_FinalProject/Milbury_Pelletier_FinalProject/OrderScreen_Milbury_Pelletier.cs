@@ -156,12 +156,13 @@ namespace Milbury_Pelletier_FinalProject
 
         private void lstProducts_SelectedIndexChanged(object sender, EventArgs e)
         {
+            string selected = lstProducts.Items[lstProducts.SelectedIndex].ToString();
             //Compare the items in the list and make the tag of the list = the selected object
             for(int i = 0; i < lstProducts.Items.Count; i++)
             {
 
-                if (sportsCars[i].ToString() == lstProducts.Items[i].ToString() || 
-                    luxuryCars[i].ToString() == lstProducts.Items[i].ToString())
+                if (sportsCars[i].ToString() == selected || 
+                    luxuryCars[i].ToString() == selected)
                 {
                     lstProducts.Tag = sportsCars[i];
                     break;
@@ -175,6 +176,7 @@ namespace Milbury_Pelletier_FinalProject
         {
             //Create a checkout form and close the orders form
             CheckoutForm_Milbury_Pelletier checkoutForm = new CheckoutForm_Milbury_Pelletier();
+            checkoutForm.Tag = Cart;
             checkoutForm.ShowDialog();
 
             for (int i = 0; i < Cart.Count; i++)
