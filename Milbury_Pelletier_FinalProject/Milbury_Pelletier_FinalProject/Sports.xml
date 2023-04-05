@@ -4,29 +4,34 @@
 	<Make>Chevrolet</Make>
 	<Model>Camaro ZL1</Model>
 	<Type>Sports</Type>
+	<Stock>8<Stock>
     </Product>
     <Product>
 	<Price>37000</Price>
 	<Make>Ford</Make>
 	<Model>Mustang</Model>
 	<Type>Sports</Type>
+	<Stock>9<Stock>
     </Product>
     <Product>
 	<Price>39795</Price>
 	<Make>Dodge</Make>
 	<Model>Challenger</Model>
 	<Type>Sports</Type>
+	<Stock>2<Stock>
     </Product>
     <Product>
 	<Price>272300</Price>
 	<Make>Porsche</Make>
 	<Model>911</Model>
 	<Type>Sports</Type>
+	<Stock>23<Stock>
     </Product>
     <Product>
 	<Price>99.99</Price>
 	<Make>Nissan</Make>
 	<Model>Z</Model>
 	<Type>Sports</Type>
+	<Stock>18<Stock>
     </Product>
 </Products>

@@ -4,29 +4,34 @@
 	<Make>Rolls Royce</Make>
 	<Model>Phantom</Model>
 	<Type>Luxury</Type>
+	<Stock>12<Stock>
     </Product>
     <Product>
 	<Price>252000</Price>
 	<Make>Bentley</Make>
 	<Model>Flying Spur</Model>
 	<Type>Luxury</Type>
+	<Stock>11<Stock>
     </Product>
     <Product>
 	<Price>147000</Price>
 	<Make>BMW</Make>
 	<Model>i7</Model>
 	<Type>Luxury</Type>
+	<Stock>18<Stock>
     </Product>
     <Product>
 	<Price>290000</Price>
 	<Make>Mercedes</Make>
 	<Model>Maybach S class</Model>
 	<Type>Luxury</Type>
+	<Stock>20<Stock>
     </Product>
     <Product>
 	<Price>2265000</Price>
 	<Make>Range Rover</Make>
 	<Model>Land Rover</Model>
 	<Type>Luxury</Type>
+	<Stock>40<Stock>
     </Product>
 </Products>

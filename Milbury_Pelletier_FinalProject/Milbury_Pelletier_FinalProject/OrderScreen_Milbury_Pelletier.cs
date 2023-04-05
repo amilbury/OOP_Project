@@ -21,14 +21,14 @@ namespace Milbury_Pelletier_FinalProject
         {
             InitializeComponent();
         }
-        //setting up path varialble
-        //private const string Path = "C:\\files";
 
-        //creating new array of products
-        Products[] productsArray;
+
         private void OrderScreen_Milbury_Pelletier_Load(object sender, EventArgs e)
         {
-            if(this.Tag != null)
+                FillLists(@"..\..\Luxury.xml");
+                FillLists(@"..\..\Sports.xml");
+            
+            if (this.Tag != null)
             {
                 Users users = (Users)this.Tag;
                 if(users.AccessLevel == "Admin")
@@ -36,6 +36,7 @@ namespace Milbury_Pelletier_FinalProject
                     grpAdminControls.Visible = true;
                 }
             }
+            //Add controls to the combo box
             cboCarType.Items.Add("Choose a car type:");
             cboCarType.SelectedIndex = 0;
             cboCarType.Items.Add("Luxury Cars");
@@ -44,15 +45,37 @@ namespace Milbury_Pelletier_FinalProject
             
         }
 
+        //If the selected index is 1, fill the list with luxury cars, if selected index is 2,
+        //fill it with sports cars
         private void cboCarType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(cboCarType.SelectedIndex == 1)
+            if (cboCarType.SelectedIndex == 1)
             {
-                FillList(@"..\..\Luxury.xml");
+                foreach(LuxuryCar item in luxuryCars)
+                {
+                    if (item.Stock == 0)
+                    {
+
+                    }
+                    else
+                    {
+                        lstProducts.Items.Add(item.ToString());
+                    }
+                }
             }
-            else if(cboCarType.SelectedIndex == 2)
+            else if (cboCarType.SelectedIndex == 2)
             {
-                FillList(@"..\..\Sports.xml");
+                foreach(SportsCar item in sportsCars)
+                {
+                    if (item.Stock == 0)
+                    {
+
+                    }
+                    else
+                    {
+                        lstProducts.Items.Add(item.ToString());
+                    }
+                }
             }
         }
         
@@ -63,48 +86,58 @@ namespace Milbury_Pelletier_FinalProject
          * Date: April 5th, 2023
          * Author: Aaron Milbury
          */
-        private void FillList(string path)
+
+        List<LuxuryCar> luxuryCars = new List<LuxuryCar>();
+        List<SportsCar> sportsCars = new List<SportsCar>();
+        private void FillLists(string path)
         {
             lstProducts.Items.Clear();
-            try
-            {
+            //try
+            //{
                 Random rand = new Random();
                 List<Cars> products = new List<Cars>();
                 products = ProductDB.GetProducts(path);
                 foreach (Cars car in products)
                 {
                     car.Stock = rand.Next(-10, 100);
+
+                    //If the car is a sports car, give it a horsepower and add it to the list
+                    //of sports cars
                     if(car.Type == "Sports")
                     {
                     SportsCar sportsCar = Cars.CloneSport(car);
                     sportsCar.horsePower = rand.Next(300, 700);
-                        lstProducts.Items.Add(sportsCar.ToString());
+                    sportsCars.Add(sportsCar);
                     }
+                    //If the car is a luxury car, give it a tier based on its price
+                    //and add it to the list box
                     else if (car.Type == "Luxury")
                     {
                         LuxuryCar luxuryCar = Cars.CloneLuxury(car);
-                        switch (luxuryCar.CompareTo(luxuryCar)) //use a switch
+                        //switch to using Icompareable to
+                        //compare different prices of cars to eachother to determine the tier
+                        switch (luxuryCar.CompareTo(luxuryCar))
                         {
                             case 1: luxuryCar.Tier = "High"; break;
                             case -1: luxuryCar.Tier = "Low"; break;
                             case 0: luxuryCar.Tier = "Mid"; break;
                         }
-                        lstProducts.Items.Add(luxuryCar.ToString());
+                        luxuryCars.Add(luxuryCar);
                     }
                     else
                     {
                         lstProducts.Items.Add(car.ToString());
                     }
                 }
-           }
-            catch
-            {
-                MessageBox.Show("Error: Path is incorrect", "Error");
-            }
+           //}
+            //catch
+            //{
+            //    MessageBox.Show("Error: Path is incorrect", "Error");
+            //}
         }
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            LoginScreen_Milbury_Pelletier loginScreen = new LoginScreen_Milbury_Pelletier();
+            this.Close();
             
         }
     }

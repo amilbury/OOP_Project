@@ -39,7 +39,8 @@ namespace ProductMaintenance
                     string make = xmlIn.ReadElementContentAsString();
                     string model = xmlIn.ReadElementContentAsString();
                     string type = xmlIn.ReadElementContentAsString();
-                    Cars product = new Cars(price, make, model, type);
+                    int stock = xmlIn.ReadElementContentAsInt();
+                    Cars product = new Cars(price, make, model, type, stock);
                     products.Add(product);
                 }
                 while (xmlIn.ReadToNextSibling("Product"));
