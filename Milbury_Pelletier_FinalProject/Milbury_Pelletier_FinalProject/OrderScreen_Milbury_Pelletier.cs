@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Xml;
+using ProductMaintenance;
 
 namespace Milbury_Pelletier_FinalProject
 {
@@ -40,6 +41,7 @@ namespace Milbury_Pelletier_FinalProject
             if(cboCarType.SelectedIndex == 1)
             {
 
+                ProductDB.GetProducts();
             }
             else if(cboCarType.SelectedIndex == 2)
             {
