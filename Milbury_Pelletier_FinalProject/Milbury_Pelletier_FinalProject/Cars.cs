@@ -51,8 +51,26 @@ namespace Milbury_Pelletier_FinalProject
             return carString;
         }
 
-
-
-
+        
+        public static SportsCar CloneSport(Cars car)
+        {
+            SportsCar sportsCar = new SportsCar();
+            sportsCar.Price = car.Price;
+            sportsCar.Make = car.Make;
+            sportsCar.Model = car.Model;
+            sportsCar.Type = car.Type;
+            sportsCar.Stock = car.Stock;
+            return sportsCar;
+        }
+        public static LuxuryCar CloneLuxury(Cars car)
+        {
+            LuxuryCar luxuryCar = new LuxuryCar();
+            luxuryCar.Price = car.Price;
+            luxuryCar.Make = car.Make;
+            luxuryCar.Model = car.Model;
+            luxuryCar.Type = car.Type;
+            luxuryCar.Stock = car.Stock;
+            return luxuryCar;
+        }
     }
 }

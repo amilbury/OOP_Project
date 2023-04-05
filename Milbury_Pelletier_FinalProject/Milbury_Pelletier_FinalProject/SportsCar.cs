@@ -14,7 +14,7 @@ namespace Milbury_Pelletier_FinalProject
 
         public override string ToString()
         {
-            string sportsCar = base.ToString() + "Horse Power:  " + horsePower.ToString();
+            string sportsCar = base.ToString() + " Horse Power: " + horsePower.ToString();
             return sportsCar;
         }
     }
