@@ -51,7 +51,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(886, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(953, 11);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(89, 84);
@@ -66,17 +66,17 @@
             this.lstProducts.Location = new System.Drawing.Point(12, 209);
             this.lstProducts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lstProducts.Name = "lstProducts";
-            this.lstProducts.Size = new System.Drawing.Size(484, 228);
+            this.lstProducts.Size = new System.Drawing.Size(516, 228);
             this.lstProducts.TabIndex = 8;
             // 
             // cboCarType
             // 
             this.cboCarType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCarType.FormattingEnabled = true;
-            this.cboCarType.Location = new System.Drawing.Point(149, 98);
+            this.cboCarType.Location = new System.Drawing.Point(177, 100);
             this.cboCarType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboCarType.Name = "cboCarType";
-            this.cboCarType.Size = new System.Drawing.Size(139, 24);
+            this.cboCarType.Size = new System.Drawing.Size(159, 24);
             this.cboCarType.TabIndex = 9;
             this.cboCarType.SelectedIndexChanged += new System.EventHandler(this.cboCarType_SelectedIndexChanged);
             // 
@@ -84,7 +84,7 @@
             // 
             this.lblCarType.AllowDrop = true;
             this.lblCarType.AutoSize = true;
-            this.lblCarType.Location = new System.Drawing.Point(163, 70);
+            this.lblCarType.Location = new System.Drawing.Point(199, 72);
             this.lblCarType.Name = "lblCarType";
             this.lblCarType.Size = new System.Drawing.Size(113, 16);
             this.lblCarType.TabIndex = 10;
@@ -93,7 +93,7 @@
             // lblProducts
             // 
             this.lblProducts.AutoSize = true;
-            this.lblProducts.Location = new System.Drawing.Point(196, 191);
+            this.lblProducts.Location = new System.Drawing.Point(229, 191);
             this.lblProducts.Name = "lblProducts";
             this.lblProducts.Size = new System.Drawing.Size(60, 16);
             this.lblProducts.TabIndex = 11;
@@ -101,7 +101,7 @@
             // 
             // btnCheckout
             // 
-            this.btnCheckout.Location = new System.Drawing.Point(534, 402);
+            this.btnCheckout.Location = new System.Drawing.Point(601, 408);
             this.btnCheckout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCheckout.Name = "btnCheckout";
             this.btnCheckout.Size = new System.Drawing.Size(91, 28);
@@ -111,7 +111,7 @@
             // 
             // btnCart
             // 
-            this.btnCart.Location = new System.Drawing.Point(534, 202);
+            this.btnCart.Location = new System.Drawing.Point(601, 208);
             this.btnCart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCart.Name = "btnCart";
             this.btnCart.Size = new System.Drawing.Size(91, 28);
@@ -127,7 +127,7 @@
             this.grpAdminControls.Controls.Add(this.label4);
             this.grpAdminControls.Controls.Add(this.label3);
             this.grpAdminControls.Controls.Add(this.label2);
-            this.grpAdminControls.Location = new System.Drawing.Point(656, 202);
+            this.grpAdminControls.Location = new System.Drawing.Point(723, 208);
             this.grpAdminControls.Margin = new System.Windows.Forms.Padding(4);
             this.grpAdminControls.Name = "grpAdminControls";
             this.grpAdminControls.Padding = new System.Windows.Forms.Padding(4);
@@ -196,7 +196,7 @@
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(534, 294);
+            this.btnLogout.Location = new System.Drawing.Point(601, 300);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(91, 28);
@@ -210,7 +210,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(983, 463);
+            this.ClientSize = new System.Drawing.Size(1074, 463);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.grpAdminControls);
             this.Controls.Add(this.btnCart);

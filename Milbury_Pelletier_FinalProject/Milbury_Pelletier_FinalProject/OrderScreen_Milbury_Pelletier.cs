@@ -68,10 +68,10 @@ namespace Milbury_Pelletier_FinalProject
                 foreach (Cars car in products)
                 {
                     car.Stock = rand.Next(-10, 100);
-                    if(car.type == "Sport")
-                    {
-
-                    }
+                    //if(car.type == "Sport")
+                    //{
+                    //
+                    //}
                     lstProducts.Items.Add(car.ToString());
                 }
             }

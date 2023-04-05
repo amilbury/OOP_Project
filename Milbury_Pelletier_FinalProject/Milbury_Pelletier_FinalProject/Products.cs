@@ -27,7 +27,7 @@ namespace Milbury_Pelletier_FinalProject
                     value = 23;
                 }
                 stock = value;
-                       ; }
+                       }
         }
         public int Code { get; set; }
 

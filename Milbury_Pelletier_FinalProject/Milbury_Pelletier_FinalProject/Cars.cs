@@ -31,11 +31,12 @@ namespace Milbury_Pelletier_FinalProject
 
         }
 
-        public Cars(decimal inPrice, string make, string model, string type)
+        public Cars(decimal inPrice, string inMake, string inModel, string inType)
         {
             Price = inPrice;
-            Make = make;
-            Model = model;
+            Make = inMake;
+            Model = inModel;
+            Type = inType;
         }
         public override string ToString()
         {
@@ -45,7 +46,7 @@ namespace Milbury_Pelletier_FinalProject
                 " Make: " +
                 Make + " Model: " +
                 Model + " Type: " +
-                Type + "Stock: " + Stock;
+                Type + " Stock: " + Stock;
 
             return carString;
         }
