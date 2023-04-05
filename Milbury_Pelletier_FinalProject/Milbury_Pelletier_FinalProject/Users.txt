@@ -1,13 +1,15 @@
-customer.username = "CarEnthusiast76";
-customer.password = "Cars1234";
-customer.username = "theLegend27";
-customer.password = "Legends1234";
-customer.username = "NoobSlanderer309";
-customer.password = "Noobs1234";
-customer.username = "Leon S Kennedy";
-customer.password = "Leons1234";
-customer.username = "Ashley Graham";
-customer.password = "Graham1234";
-
-customer.accesslevel = "admin"
-customer.accesslevel = "customerA"
+CarEnthusiast76
+Cars1234
+Customer
+theLegend27
+Legends1234
+Customer
+NoobSlanderer309
+Noobs1234
+Customer
+Leon S Kennedy
+Leons1234
+Customer
+Ashley Graham
+Graham123
+Customer
