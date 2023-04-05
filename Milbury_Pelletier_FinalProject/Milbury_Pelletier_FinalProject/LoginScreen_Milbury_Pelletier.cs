@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Classy;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -54,9 +55,9 @@ namespace Milbury_Pelletier_FinalProject
             string line2;
             string line3;
 
-            StreamReader nameFile = new StreamReader(@"..\..\Sports.txt");
+            StreamReader nameFile = new StreamReader(@"..\..\Users.txt");
 
-            for (int i = 2; i < 7; i++)
+            for (int i = 2; i == 7; i++)
             {
                 line = nameFile.ReadLine();
                 line2 = nameFile.ReadLine();
@@ -70,13 +71,15 @@ namespace Milbury_Pelletier_FinalProject
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if(txtID.Text != "" && txtPSW.Text != "")
+            if(Validator.IsPresent(txtID) && Validator.IsPresent(txtPSW))
             {
                 for(int i = 0; i < userList.Count; i++)
                 {
                     if (userList[i].Username == txtID.Text && userList[i].Password == txtPSW.Text)
                     {
+                        this.Tag = userList[i];
                         OrderScreen_Milbury_Pelletier orderScreen = new OrderScreen_Milbury_Pelletier();
+                        orderScreen.Tag = userList[i];
                         orderScreen.ShowDialog();
                         this.Close();
                     }

@@ -8,10 +8,11 @@ namespace Milbury_Pelletier_FinalProject
 {
     public class Cars : Products
     {
-        public string transmission;
+
         public string make;
         public string model;
         public int gears;
+        public string type;
 
         public string Make
         {
@@ -22,8 +23,8 @@ namespace Milbury_Pelletier_FinalProject
         public string Model { get; set; }
         public string Transmission { get; set; }
         public int Gears { get; set; }
-        public string type;
         public string Type {get; set; }
+
 
         public Cars()
         {
@@ -44,7 +45,7 @@ namespace Milbury_Pelletier_FinalProject
                 " Make: " +
                 Make + " Model: " +
                 Model + " Type: " +
-                Type;
+                Type + "Stock: " + Stock;
 
             return carString;
         }

@@ -36,18 +36,16 @@
             this.lblProducts = new System.Windows.Forms.Label();
             this.btnCheckout = new System.Windows.Forms.Button();
             this.btnCart = new System.Windows.Forms.Button();
-            this.lblAdmin = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpAdminControls = new System.Windows.Forms.GroupBox();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnHide = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.radControlPanel = new System.Windows.Forms.RadioButton();
             this.btnLogout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.grpAdminControls.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -65,10 +63,10 @@
             // 
             this.lstProducts.FormattingEnabled = true;
             this.lstProducts.ItemHeight = 16;
-            this.lstProducts.Location = new System.Drawing.Point(24, 218);
+            this.lstProducts.Location = new System.Drawing.Point(12, 209);
             this.lstProducts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lstProducts.Name = "lstProducts";
-            this.lstProducts.Size = new System.Drawing.Size(442, 228);
+            this.lstProducts.Size = new System.Drawing.Size(484, 228);
             this.lstProducts.TabIndex = 8;
             // 
             // cboCarType
@@ -121,31 +119,23 @@
             this.btnCart.Text = "Add to cart";
             this.btnCart.UseVisualStyleBackColor = true;
             // 
-            // lblAdmin
+            // grpAdminControls
             // 
-            this.lblAdmin.AutoSize = true;
-            this.lblAdmin.Location = new System.Drawing.Point(780, 173);
-            this.lblAdmin.Name = "lblAdmin";
-            this.lblAdmin.Size = new System.Drawing.Size(97, 16);
-            this.lblAdmin.TabIndex = 15;
-            this.lblAdmin.Text = "Admin Controls";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.btnRemove);
-            this.groupBox1.Controls.Add(this.btnAdd);
-            this.groupBox1.Controls.Add(this.btnHide);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(656, 202);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(297, 229);
-            this.groupBox1.TabIndex = 16;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "grpAdminControls";
+            this.grpAdminControls.Controls.Add(this.btnRemove);
+            this.grpAdminControls.Controls.Add(this.btnAdd);
+            this.grpAdminControls.Controls.Add(this.btnHide);
+            this.grpAdminControls.Controls.Add(this.label4);
+            this.grpAdminControls.Controls.Add(this.label3);
+            this.grpAdminControls.Controls.Add(this.label2);
+            this.grpAdminControls.Location = new System.Drawing.Point(656, 202);
+            this.grpAdminControls.Margin = new System.Windows.Forms.Padding(4);
+            this.grpAdminControls.Name = "grpAdminControls";
+            this.grpAdminControls.Padding = new System.Windows.Forms.Padding(4);
+            this.grpAdminControls.Size = new System.Drawing.Size(297, 229);
+            this.grpAdminControls.TabIndex = 16;
+            this.grpAdminControls.TabStop = false;
+            this.grpAdminControls.Text = "Admin Controls";
+            this.grpAdminControls.Visible = false;
             // 
             // btnRemove
             // 
@@ -204,18 +194,6 @@
             this.label2.TabIndex = 16;
             this.label2.Text = "Hide Product From List:";
             // 
-            // radControlPanel
-            // 
-            this.radControlPanel.AutoSize = true;
-            this.radControlPanel.Location = new System.Drawing.Point(656, 167);
-            this.radControlPanel.Margin = new System.Windows.Forms.Padding(4);
-            this.radControlPanel.Name = "radControlPanel";
-            this.radControlPanel.Size = new System.Drawing.Size(108, 20);
-            this.radControlPanel.TabIndex = 17;
-            this.radControlPanel.TabStop = true;
-            this.radControlPanel.Text = "Control Panel";
-            this.radControlPanel.UseVisualStyleBackColor = true;
-            // 
             // btnLogout
             // 
             this.btnLogout.Location = new System.Drawing.Point(534, 294);
@@ -234,9 +212,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(983, 463);
             this.Controls.Add(this.btnLogout);
-            this.Controls.Add(this.radControlPanel);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.lblAdmin);
+            this.Controls.Add(this.grpAdminControls);
             this.Controls.Add(this.btnCart);
             this.Controls.Add(this.btnCheckout);
             this.Controls.Add(this.lblProducts);
@@ -250,8 +226,8 @@
             this.Text = "OrderScreen_Milbury_Pelletier";
             this.Load += new System.EventHandler(this.OrderScreen_Milbury_Pelletier_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.grpAdminControls.ResumeLayout(false);
+            this.grpAdminControls.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,15 +242,13 @@
         private System.Windows.Forms.Label lblProducts;
         private System.Windows.Forms.Button btnCheckout;
         private System.Windows.Forms.Button btnCart;
-        private System.Windows.Forms.Label lblAdmin;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grpAdminControls;
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnHide;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton radControlPanel;
         private System.Windows.Forms.Button btnLogout;
     }
 }

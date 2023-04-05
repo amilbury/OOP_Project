@@ -46,6 +46,7 @@
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(390, 30);
             this.txtID.TabIndex = 0;
+            this.txtID.Tag = "Username";
             // 
             // txtPSW
             // 
@@ -55,6 +56,7 @@
             this.txtPSW.PasswordChar = '*';
             this.txtPSW.Size = new System.Drawing.Size(390, 30);
             this.txtPSW.TabIndex = 1;
+            this.txtPSW.Tag = "Password";
             // 
             // lblID
             // 

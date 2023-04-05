@@ -22,12 +22,20 @@ namespace Milbury_Pelletier_FinalProject
             InitializeComponent();
         }
         //setting up path varialble
-        private const string Path = "C:\\files";
+        //private const string Path = "C:\\files";
 
         //creating new array of products
         Products[] productsArray;
         private void OrderScreen_Milbury_Pelletier_Load(object sender, EventArgs e)
         {
+            if(this.Tag != null)
+            {
+                Users users = (Users)this.Tag;
+                if(users.AccessLevel == "Admin")
+                {
+                    grpAdminControls.Visible = true;
+                }
+            }
             cboCarType.Items.Add("Choose a car type:");
             cboCarType.SelectedIndex = 0;
             cboCarType.Items.Add("Luxury Cars");
@@ -50,12 +58,26 @@ namespace Milbury_Pelletier_FinalProject
         
         private void FillList(string path)
         {
-            lstProducts.Items.Clear();
-            List<Cars> products = new List<Cars>();
-            products = ProductDB.GetProducts(path);
-            foreach (Cars car in products)
+            try
             {
-                lstProducts.Items.Add(car.ToString());
+
+                Random rand = new Random();
+                lstProducts.Items.Clear();
+                List<Cars> products = new List<Cars>();
+                products = ProductDB.GetProducts(path);
+                foreach (Cars car in products)
+                {
+                    car.Stock = rand.Next(-10, 100);
+                    if(car.type == "Sport")
+                    {
+
+                    }
+                    lstProducts.Items.Add(car.ToString());
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Error: Path is incorrect", "Error");
             }
         }
         private void btnLogout_Click(object sender, EventArgs e)
