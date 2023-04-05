@@ -143,6 +143,7 @@ namespace Milbury_Pelletier_FinalProject
             this.Close();
         }
 
+        //Add the cars on the selected index to the cart
         List<Cars> Cart = new List<Cars>();
         private void btnCart_Click(object sender, EventArgs e)
         {
@@ -155,6 +156,7 @@ namespace Milbury_Pelletier_FinalProject
 
         private void lstProducts_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //Compare the items in the list and make the tag of the list = the selected object
             for(int i = 0; i < lstProducts.Items.Count; i++)
             {
 
@@ -171,6 +173,7 @@ namespace Milbury_Pelletier_FinalProject
 
         private void btnCheckout_Click(object sender, EventArgs e)
         {
+            //Create a checkout form and close the orders form
             CheckoutForm_Milbury_Pelletier checkoutForm = new CheckoutForm_Milbury_Pelletier();
             checkoutForm.ShowDialog();
             this.Close();

@@ -47,6 +47,7 @@ namespace Milbury_Pelletier_FinalProject
         public List<Users> userList = new List<Users>();
         private void LoginScreen_Milbury_Pelletier_Load(object sender, EventArgs e)
         {
+            //read different users from the text file and put them into the user list
             Customer cathy = new Customer("cathy", "cathy", "Customer");
             Admin admin = new Admin("admin", "admin", "Admin");
             userList.Add(cathy);
