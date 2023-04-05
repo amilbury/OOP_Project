@@ -32,13 +32,14 @@ namespace ProductMaintenance
                 // create one Product object for each Product node
                 do
                 {
-                    Cars product = new Cars();
+
                     xmlIn.ReadStartElement("Product");
-                    product.Price =
+                    decimal price =
                         xmlIn.ReadElementContentAsDecimal();
-                    product.Make = xmlIn.ReadElementContentAsString();
-                    product.Model = xmlIn.ReadElementContentAsString();
-                    product.Type = xmlIn.ReadElementContentAsString();
+                    string make = xmlIn.ReadElementContentAsString();
+                    string model = xmlIn.ReadElementContentAsString();
+                    string type = xmlIn.ReadElementContentAsString();
+                    Cars product = new Cars(price, make, model, type);
                     products.Add(product);
                 }
                 while (xmlIn.ReadToNextSibling("Product"));

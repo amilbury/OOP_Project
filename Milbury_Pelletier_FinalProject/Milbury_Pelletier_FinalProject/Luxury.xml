@@ -1,30 +1,30 @@
 <Products>
     <Product>
-	<Price>$560,500</Price>
+	<Price>560500</Price>
 	<Make>Rolls Royce</Make>
 	<Model>Phantom</Model>
 	<Type>Luxury</Type>
     </Product>
     <Product>
-	<Price>$252,000</Price>
+	<Price>252000</Price>
 	<Make>Bentley</Make>
 	<Model>Flying Spur</Model>
 	<Type>Luxury</Type>
     </Product>
     <Product>
-	<Price>$147,000</Price>
+	<Price>147000</Price>
 	<Make>BMW</Make>
 	<Model>i7</Model>
 	<Type>Luxury</Type>
     </Product>
     <Product>
-	<Price>$290,000</Price>
+	<Price>290000</Price>
 	<Make>Mercedes</Make>
 	<Model>Maybach S class</Model>
 	<Type>Luxury</Type>
     </Product>
     <Product>
-	<Price>$226,5000</Price>
+	<Price>2265000</Price>
 	<Make>Range Rover</Make>
 	<Model>Land Rover</Model>
 	<Type>Luxury</Type>

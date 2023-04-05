@@ -40,16 +40,24 @@ namespace Milbury_Pelletier_FinalProject
         {
             if(cboCarType.SelectedIndex == 1)
             {
-                lstProducts.Items.Clear();
-                lstProducts.Items.Add(ProductDB.GetProducts(@"..\..\Sports.xml"));
+                FillList(@"..\..\Luxury.xml");
             }
             else if(cboCarType.SelectedIndex == 2)
             {
-                lstProducts.Items.Clear();
-                lstProducts.Items.Add(ProductDB.GetProducts(@"..\..\Luxury.xml"));
+                FillList(@"..\..\Sports.xml");
             }
         }
-
+        
+        private void FillList(string path)
+        {
+            lstProducts.Items.Clear();
+            List<Cars> products = new List<Cars>();
+            products = ProductDB.GetProducts(path);
+            foreach (Cars car in products)
+            {
+                lstProducts.Items.Add(car.ToString());
+            }
+        }
         private void btnLogout_Click(object sender, EventArgs e)
         {
             LoginScreen_Milbury_Pelletier loginScreen = new LoginScreen_Milbury_Pelletier();

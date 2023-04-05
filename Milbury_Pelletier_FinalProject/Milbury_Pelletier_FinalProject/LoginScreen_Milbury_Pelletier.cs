@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -49,7 +50,21 @@ namespace Milbury_Pelletier_FinalProject
             Admin admin = new Admin("admin", "admin", "Admin");
             userList.Add(cathy);
             userList.Add(admin);
+            string line;
+            string line2;
+            string line3;
 
+            StreamReader nameFile = new StreamReader(@"..\..\Sports.txt");
+
+            for (int i = 2; i < 7; i++)
+            {
+                line = nameFile.ReadLine();
+                line2 = nameFile.ReadLine();
+                line3 = nameFile.ReadLine();
+                userList.Add(new Customer(line, line2, line3));
+            }
+            //close file
+            nameFile.Close();
 
         }
 
