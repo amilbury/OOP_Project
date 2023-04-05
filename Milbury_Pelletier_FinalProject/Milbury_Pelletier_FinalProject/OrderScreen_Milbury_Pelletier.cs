@@ -40,12 +40,13 @@ namespace Milbury_Pelletier_FinalProject
         {
             if(cboCarType.SelectedIndex == 1)
             {
-
-                ProductDB.GetProducts();
+                lstProducts.Items.Clear();
+                lstProducts.Items.Add(ProductDB.GetProducts(@"..\..\Sports.xml"));
             }
             else if(cboCarType.SelectedIndex == 2)
             {
-
+                lstProducts.Items.Clear();
+                lstProducts.Items.Add(ProductDB.GetProducts(@"..\..\Luxury.xml"));
             }
         }
 

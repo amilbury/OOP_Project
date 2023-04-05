@@ -34,12 +34,10 @@ namespace ProductMaintenance
                 {
                     Cars product = new Cars();
                     xmlIn.ReadStartElement("Product");
-                    product.Code = 
-                        Convert.ToInt32(xmlIn.ReadElementContentAsString());
-                    product.Description =
-                        xmlIn.ReadElementContentAsString();
                     product.Price =
                         xmlIn.ReadElementContentAsDecimal();
+                    product.Make = xmlIn.ReadElementContentAsString();
+                    product.Model = xmlIn.ReadElementContentAsString();
                     product.Type = xmlIn.ReadElementContentAsString();
                     products.Add(product);
                 }
