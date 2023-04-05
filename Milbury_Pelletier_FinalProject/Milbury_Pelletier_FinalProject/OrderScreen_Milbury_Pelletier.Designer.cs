@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderScreen_Milbury_Pelletier));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picLogo = new System.Windows.Forms.PictureBox();
             this.lstProducts = new System.Windows.Forms.ListBox();
             this.cboCarType = new System.Windows.Forms.ComboBox();
             this.lblCarType = new System.Windows.Forms.Label();
@@ -40,24 +40,24 @@
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnHide = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblRemove = new System.Windows.Forms.Label();
+            this.lblAdd = new System.Windows.Forms.Label();
+            this.lblHide = new System.Windows.Forms.Label();
             this.btnLogout = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.grpAdminControls.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // picLogo
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(953, 11);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(89, 84);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
+            this.picLogo.Location = new System.Drawing.Point(953, 11);
+            this.picLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(89, 84);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLogo.TabIndex = 7;
+            this.picLogo.TabStop = false;
             // 
             // lstProducts
             // 
@@ -68,6 +68,7 @@
             this.lstProducts.Name = "lstProducts";
             this.lstProducts.Size = new System.Drawing.Size(516, 228);
             this.lstProducts.TabIndex = 8;
+            this.lstProducts.SelectedIndexChanged += new System.EventHandler(this.lstProducts_SelectedIndexChanged);
             // 
             // cboCarType
             // 
@@ -108,6 +109,7 @@
             this.btnCheckout.TabIndex = 12;
             this.btnCheckout.Text = "&Checkout";
             this.btnCheckout.UseVisualStyleBackColor = true;
+            this.btnCheckout.Click += new System.EventHandler(this.btnCheckout_Click);
             // 
             // btnCart
             // 
@@ -118,15 +120,16 @@
             this.btnCart.TabIndex = 13;
             this.btnCart.Text = "Add to cart";
             this.btnCart.UseVisualStyleBackColor = true;
+            this.btnCart.Click += new System.EventHandler(this.btnCart_Click);
             // 
             // grpAdminControls
             // 
             this.grpAdminControls.Controls.Add(this.btnRemove);
             this.grpAdminControls.Controls.Add(this.btnAdd);
             this.grpAdminControls.Controls.Add(this.btnHide);
-            this.grpAdminControls.Controls.Add(this.label4);
-            this.grpAdminControls.Controls.Add(this.label3);
-            this.grpAdminControls.Controls.Add(this.label2);
+            this.grpAdminControls.Controls.Add(this.lblRemove);
+            this.grpAdminControls.Controls.Add(this.lblAdd);
+            this.grpAdminControls.Controls.Add(this.lblHide);
             this.grpAdminControls.Location = new System.Drawing.Point(723, 208);
             this.grpAdminControls.Margin = new System.Windows.Forms.Padding(4);
             this.grpAdminControls.Name = "grpAdminControls";
@@ -167,32 +170,32 @@
             this.btnHide.Text = "Hide Product";
             this.btnHide.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // lblRemove
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 160);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(163, 16);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Remove from Product List:";
+            this.lblRemove.AutoSize = true;
+            this.lblRemove.Location = new System.Drawing.Point(7, 160);
+            this.lblRemove.Name = "lblRemove";
+            this.lblRemove.Size = new System.Drawing.Size(163, 16);
+            this.lblRemove.TabIndex = 18;
+            this.lblRemove.Text = "Remove from Product List:";
             // 
-            // label3
+            // lblAdd
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 98);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 16);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Add to Product List:";
+            this.lblAdd.AutoSize = true;
+            this.lblAdd.Location = new System.Drawing.Point(7, 98);
+            this.lblAdd.Name = "lblAdd";
+            this.lblAdd.Size = new System.Drawing.Size(121, 16);
+            this.lblAdd.TabIndex = 17;
+            this.lblAdd.Text = "Add to Product List:";
             // 
-            // label2
+            // lblHide
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 31);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 16);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Hide Product From List:";
+            this.lblHide.AutoSize = true;
+            this.lblHide.Location = new System.Drawing.Point(7, 31);
+            this.lblHide.Name = "lblHide";
+            this.lblHide.Size = new System.Drawing.Size(145, 16);
+            this.lblHide.TabIndex = 16;
+            this.lblHide.Text = "Hide Product From List:";
             // 
             // btnLogout
             // 
@@ -219,13 +222,13 @@
             this.Controls.Add(this.lblCarType);
             this.Controls.Add(this.cboCarType);
             this.Controls.Add(this.lstProducts);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picLogo);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "OrderScreen_Milbury_Pelletier";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OrderScreen_Milbury_Pelletier";
             this.Load += new System.EventHandler(this.OrderScreen_Milbury_Pelletier_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.grpAdminControls.ResumeLayout(false);
             this.grpAdminControls.PerformLayout();
             this.ResumeLayout(false);
@@ -235,7 +238,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.ListBox lstProducts;
         private System.Windows.Forms.ComboBox cboCarType;
         private System.Windows.Forms.Label lblCarType;
@@ -246,9 +249,9 @@
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnHide;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblRemove;
+        private System.Windows.Forms.Label lblAdd;
+        private System.Windows.Forms.Label lblHide;
         private System.Windows.Forms.Button btnLogout;
     }
 }

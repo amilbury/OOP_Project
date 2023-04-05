@@ -51,7 +51,8 @@ namespace Milbury_Pelletier_FinalProject
         {
             if (cboCarType.SelectedIndex == 1)
             {
-                foreach(LuxuryCar item in luxuryCars)
+                lstProducts.Items.Clear();
+                foreach (LuxuryCar item in luxuryCars)
                 {
                     if (item.Stock == 0)
                     {
@@ -59,13 +60,15 @@ namespace Milbury_Pelletier_FinalProject
                     }
                     else
                     {
+
                         lstProducts.Items.Add(item.ToString());
                     }
                 }
             }
             else if (cboCarType.SelectedIndex == 2)
             {
-                foreach(SportsCar item in sportsCars)
+                lstProducts.Items.Clear();
+                foreach (SportsCar item in sportsCars)
                 {
                     if (item.Stock == 0)
                     {
@@ -73,6 +76,7 @@ namespace Milbury_Pelletier_FinalProject
                     }
                     else
                     {
+
                         lstProducts.Items.Add(item.ToString());
                     }
                 }
@@ -91,15 +95,14 @@ namespace Milbury_Pelletier_FinalProject
         List<SportsCar> sportsCars = new List<SportsCar>();
         private void FillLists(string path)
         {
-            lstProducts.Items.Clear();
-            //try
-            //{
+
+            try
+            {
                 Random rand = new Random();
                 List<Cars> products = new List<Cars>();
                 products = ProductDB.GetProducts(path);
                 foreach (Cars car in products)
                 {
-                    car.Stock = rand.Next(-10, 100);
 
                     //If the car is a sports car, give it a horsepower and add it to the list
                     //of sports cars
@@ -129,16 +132,48 @@ namespace Milbury_Pelletier_FinalProject
                         lstProducts.Items.Add(car.ToString());
                     }
                 }
-           //}
-            //catch
-            //{
-            //    MessageBox.Show("Error: Path is incorrect", "Error");
-            //}
+           }
+            catch
+            {
+                MessageBox.Show("Error: Path is incorrect", "Error");
+            }
         }
         private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Close();
-            
+        }
+
+        List<Cars> Cart = new List<Cars>();
+        private void btnCart_Click(object sender, EventArgs e)
+        {
+            if(lstProducts.Tag != null)
+            {
+                Cart.Add((Cars)lstProducts.Tag);
+            }
+
+        }
+
+        private void lstProducts_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            for(int i = 0; i < lstProducts.Items.Count; i++)
+            {
+
+                if (sportsCars[i].ToString() == lstProducts.Items[i].ToString() || 
+                    luxuryCars[i].ToString() == lstProducts.Items[i].ToString())
+                {
+                    lstProducts.Tag = sportsCars[i];
+                    break;
+                }
+            }
+
+
+        }
+
+        private void btnCheckout_Click(object sender, EventArgs e)
+        {
+            CheckoutForm_Milbury_Pelletier checkoutForm = new CheckoutForm_Milbury_Pelletier();
+            checkoutForm.ShowDialog();
+            this.Close();
         }
     }
 }

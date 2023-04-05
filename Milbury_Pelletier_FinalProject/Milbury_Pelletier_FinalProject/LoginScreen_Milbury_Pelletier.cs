@@ -78,10 +78,12 @@ namespace Milbury_Pelletier_FinalProject
                     if (userList[i].Username == txtID.Text && userList[i].Password == txtPSW.Text)
                     {
                         this.Tag = userList[i];
+                        this.Hide();
                         OrderScreen_Milbury_Pelletier orderScreen = new OrderScreen_Milbury_Pelletier();
                         orderScreen.Tag = userList[i];
                         orderScreen.ShowDialog();
-                        this.Close();
+                        orderScreen = null;
+                        this.Show();
                     }
                 }
             }
