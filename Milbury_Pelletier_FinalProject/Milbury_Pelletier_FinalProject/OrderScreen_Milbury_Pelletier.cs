@@ -41,7 +41,7 @@ namespace Milbury_Pelletier_FinalProject
             if(cboCarType.SelectedIndex == 1)
             {
 
-                ProductDB.GetProducts();
+                //ProductDB.GetProducts();
             }
             else if(cboCarType.SelectedIndex == 2)
             {
