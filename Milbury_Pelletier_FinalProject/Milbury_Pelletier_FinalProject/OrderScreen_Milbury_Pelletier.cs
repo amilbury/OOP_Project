@@ -173,6 +173,11 @@ namespace Milbury_Pelletier_FinalProject
         {
             CheckoutForm_Milbury_Pelletier checkoutForm = new CheckoutForm_Milbury_Pelletier();
             checkoutForm.ShowDialog();
+
+            for (int i = 0; i < Cart.Count; i++)
+            {
+                checkoutForm.Tag = Cart;
+            }
             this.Close();
         }
     }
