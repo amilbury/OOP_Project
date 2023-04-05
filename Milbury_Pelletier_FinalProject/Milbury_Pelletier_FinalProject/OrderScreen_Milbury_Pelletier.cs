@@ -56,11 +56,18 @@ namespace Milbury_Pelletier_FinalProject
             }
         }
         
+        /*
+         * Name: FillList
+         * Returns: Void
+         * Sent: A string to act as the path
+         * Date: April 5th, 2023
+         * Author: Aaron Milbury
+         */
         private void FillList(string path)
         {
             lstProducts.Items.Clear();
-            //try
-            //{
+            try
+            {
                 Random rand = new Random();
                 List<Cars> products = new List<Cars>();
                 products = ProductDB.GetProducts(path);
@@ -89,11 +96,11 @@ namespace Milbury_Pelletier_FinalProject
                         lstProducts.Items.Add(car.ToString());
                     }
                 }
-           // }
-            //catch
-            //{
-            //    MessageBox.Show("Error: Path is incorrect", "Error");
-           // }
+           }
+            catch
+            {
+                MessageBox.Show("Error: Path is incorrect", "Error");
+            }
         }
         private void btnLogout_Click(object sender, EventArgs e)
         {
