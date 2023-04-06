@@ -41,7 +41,7 @@
             // 
             // txtMake
             // 
-            this.txtMake.Location = new System.Drawing.Point(207, 85);
+            this.txtMake.Location = new System.Drawing.Point(207, 78);
             this.txtMake.Name = "txtMake";
             this.txtMake.Size = new System.Drawing.Size(100, 20);
             this.txtMake.TabIndex = 0;
@@ -70,7 +70,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(207, 62);
+            this.label1.Location = new System.Drawing.Point(204, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 13);
             this.label1.TabIndex = 4;
