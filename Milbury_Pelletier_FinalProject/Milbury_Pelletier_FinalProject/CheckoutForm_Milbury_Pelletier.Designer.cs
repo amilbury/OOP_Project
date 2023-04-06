@@ -43,7 +43,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(576, 8);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(67, 68);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -77,6 +77,7 @@
             this.btnRemoveItem.TabIndex = 11;
             this.btnRemoveItem.Text = "Remove Items";
             this.btnRemoveItem.UseVisualStyleBackColor = true;
+            this.btnRemoveItem.Click += new System.EventHandler(this.btnRemoveItem_Click);
             // 
             // btnBack
             // 
@@ -86,12 +87,13 @@
             this.btnBack.TabIndex = 12;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // lstCheckout
             // 
             this.lstCheckout.FormattingEnabled = true;
             this.lstCheckout.Location = new System.Drawing.Point(79, 53);
-            this.lstCheckout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lstCheckout.Margin = new System.Windows.Forms.Padding(2);
             this.lstCheckout.Name = "lstCheckout";
             this.lstCheckout.Size = new System.Drawing.Size(475, 264);
             this.lstCheckout.TabIndex = 13;
@@ -113,7 +115,7 @@
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CheckoutForm_Milbury_Pelletier";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CheckoutForm_Milbury_Pelletier";

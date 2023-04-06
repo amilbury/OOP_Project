@@ -65,5 +65,32 @@ namespace Milbury_Pelletier_FinalProject
         {
             CheckForSave();
         }
+
+        private void btnRemoveItem_Click(object sender, EventArgs e)
+        {
+            List<Cars> Cart = new List<Cars>();
+            for(int i = 0; i < lstCheckout.Items.Count; i++)
+            {
+                if (lstCheckout.SelectedItem != null && lstCheckout.SelectedIndex != -1)
+                {
+                    lstCheckout.Items.Add(Cart[i + 1]);
+                }
+
+            }
+
+            if (lstCheckout.SelectedItem != null && lstCheckout.SelectedIndex != -1)
+            {
+                for (int i = 0; i < lstCheckout.Items.Count; i++)
+                {
+
+                    lstCheckout.Items.RemoveAt(i);
+                }
+            }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
