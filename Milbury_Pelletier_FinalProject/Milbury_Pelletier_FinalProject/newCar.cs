@@ -16,5 +16,19 @@ namespace Milbury_Pelletier_FinalProject
         {
             InitializeComponent();
         }
+
+        private void btnNewProduct_Click(object sender, EventArgs e)
+        {
+            if (txtPrice.Text != "" && txtMake.Text != "" && txtModel.Text != "" && 
+                (txtType.Text == "Sports" || txtType.Text == "Luxury"))
+            {
+                
+                    Cars car = new Cars(Convert.ToDecimal(txtPrice), txtMake.Text, txtModel.Text, txtType.Text, Convert.ToInt32(nudQuantity.Value));
+
+
+                Tag = car;
+                this.Close();
+            }
+        }
     }
 }

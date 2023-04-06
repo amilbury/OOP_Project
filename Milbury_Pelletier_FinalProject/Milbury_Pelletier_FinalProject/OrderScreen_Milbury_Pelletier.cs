@@ -14,6 +14,8 @@ using System.Xml;
 using ProductMaintenance;
 
 namespace Milbury_Pelletier_FinalProject
+    //Done by Aaron Milbury and Jared Pelletier
+    //Date: April 5th, 2023
 {
     public partial class OrderScreen_Milbury_Pelletier : Form
     {
@@ -184,6 +186,30 @@ namespace Milbury_Pelletier_FinalProject
                 checkoutForm.Tag = Cart;
             }
             this.Close();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            newCar_Milbury_Pelletier newCar = new newCar_Milbury_Pelletier();
+            newCar.Show();
+            if (newCar.Tag == null)
+            {
+
+            }
+            else
+            {
+                Cars tagCar = (Cars)newCar.Tag;
+                if(tagCar.Type == "Sports")
+                {
+                    SportsCar sportcar = Cars.CloneSport(tagCar);
+
+                }
+                else if(tagCar.Type == "Luxury")
+                {
+                    LuxuryCar luxuryCar = Cars.CloneLuxury(tagCar);
+                }
+                
+            }
         }
     }
 }

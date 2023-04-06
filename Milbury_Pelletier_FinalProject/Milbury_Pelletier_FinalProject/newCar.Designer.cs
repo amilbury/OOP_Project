@@ -32,91 +32,134 @@
             this.txtType = new System.Windows.Forms.TextBox();
             this.txtModel = new System.Windows.Forms.TextBox();
             this.nudQuantity = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblMake = new System.Windows.Forms.Label();
+            this.lblModel = new System.Windows.Forms.Label();
+            this.lblType = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnNewProduct = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtPrice = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).BeginInit();
             this.SuspendLayout();
             // 
             // txtMake
             // 
-            this.txtMake.Location = new System.Drawing.Point(207, 78);
+            this.txtMake.Location = new System.Drawing.Point(268, 183);
+            this.txtMake.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMake.Name = "txtMake";
-            this.txtMake.Size = new System.Drawing.Size(100, 20);
+            this.txtMake.Size = new System.Drawing.Size(132, 22);
             this.txtMake.TabIndex = 0;
             // 
             // txtType
             // 
-            this.txtType.Location = new System.Drawing.Point(207, 191);
+            this.txtType.Location = new System.Drawing.Point(268, 322);
+            this.txtType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtType.Name = "txtType";
-            this.txtType.Size = new System.Drawing.Size(100, 20);
+            this.txtType.Size = new System.Drawing.Size(132, 22);
             this.txtType.TabIndex = 1;
             // 
             // txtModel
             // 
-            this.txtModel.Location = new System.Drawing.Point(207, 138);
+            this.txtModel.Location = new System.Drawing.Point(268, 257);
+            this.txtModel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtModel.Name = "txtModel";
-            this.txtModel.Size = new System.Drawing.Size(100, 20);
+            this.txtModel.Size = new System.Drawing.Size(132, 22);
             this.txtModel.TabIndex = 2;
             // 
             // nudQuantity
             // 
-            this.nudQuantity.Location = new System.Drawing.Point(207, 244);
+            this.nudQuantity.Location = new System.Drawing.Point(268, 387);
+            this.nudQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nudQuantity.Name = "nudQuantity";
-            this.nudQuantity.Size = new System.Drawing.Size(100, 20);
+            this.nudQuantity.Size = new System.Drawing.Size(133, 22);
             this.nudQuantity.TabIndex = 3;
             // 
-            // label1
+            // lblMake
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(204, 51);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Make Input:";
+            this.lblMake.AutoSize = true;
+            this.lblMake.Location = new System.Drawing.Point(264, 150);
+            this.lblMake.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMake.Name = "lblMake";
+            this.lblMake.Size = new System.Drawing.Size(75, 16);
+            this.lblMake.TabIndex = 4;
+            this.lblMake.Text = "Make Input:";
             // 
-            // label2
+            // lblModel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(207, 115);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Model Input:";
+            this.lblModel.AutoSize = true;
+            this.lblModel.Location = new System.Drawing.Point(268, 229);
+            this.lblModel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblModel.Name = "lblModel";
+            this.lblModel.Size = new System.Drawing.Size(79, 16);
+            this.lblModel.TabIndex = 5;
+            this.lblModel.Text = "Model Input:";
             // 
-            // label3
+            // lblType
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(207, 168);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Type Input:";
+            this.lblType.AutoSize = true;
+            this.lblType.Location = new System.Drawing.Point(268, 294);
+            this.lblType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblType.Name = "lblType";
+            this.lblType.Size = new System.Drawing.Size(73, 16);
+            this.lblType.TabIndex = 6;
+            this.lblType.Text = "Type Input:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(207, 221);
+            this.label4.Location = new System.Drawing.Point(268, 359);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 13);
+            this.label4.Size = new System.Drawing.Size(89, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "Quantity Input:";
             // 
+            // btnNewProduct
+            // 
+            this.btnNewProduct.Location = new System.Drawing.Point(282, 440);
+            this.btnNewProduct.Name = "btnNewProduct";
+            this.btnNewProduct.Size = new System.Drawing.Size(98, 48);
+            this.btnNewProduct.TabIndex = 8;
+            this.btnNewProduct.Text = "Make new product";
+            this.btnNewProduct.UseVisualStyleBackColor = true;
+            this.btnNewProduct.Click += new System.EventHandler(this.btnNewProduct_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(263, 64);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(72, 16);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Price Input:";
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.Location = new System.Drawing.Point(267, 97);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(132, 22);
+            this.txtPrice.TabIndex = 9;
+            // 
             // newCar_Milbury_Pelletier
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(514, 418);
+            this.ClientSize = new System.Drawing.Size(685, 514);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtPrice);
+            this.Controls.Add(this.btnNewProduct);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblType);
+            this.Controls.Add(this.lblModel);
+            this.Controls.Add(this.lblMake);
             this.Controls.Add(this.nudQuantity);
             this.Controls.Add(this.txtModel);
             this.Controls.Add(this.txtType);
             this.Controls.Add(this.txtMake);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "newCar_Milbury_Pelletier";
             this.Text = "newCar_Milbury_Pelletier";
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).EndInit();
@@ -131,9 +174,12 @@
         private System.Windows.Forms.TextBox txtType;
         private System.Windows.Forms.TextBox txtModel;
         private System.Windows.Forms.NumericUpDown nudQuantity;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblMake;
+        private System.Windows.Forms.Label lblModel;
+        private System.Windows.Forms.Label lblType;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnNewProduct;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtPrice;
     }
 }

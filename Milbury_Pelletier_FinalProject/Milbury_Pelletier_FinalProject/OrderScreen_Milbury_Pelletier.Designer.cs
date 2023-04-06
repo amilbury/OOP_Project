@@ -159,6 +159,7 @@
             this.btnAdd.TabIndex = 20;
             this.btnAdd.Text = "Add Product";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnHide
             // 
