@@ -55,6 +55,12 @@
       <DependentUpon>CreateUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Customer.cs" />
+    <Compile Include="newCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newCar.Designer.cs">
+      <DependentUpon>newCar.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginScreen_Milbury_Pelletier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginScreen_Milbury_Pelletier.resx">
       <DependentUpon>LoginScreen_Milbury_Pelletier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newCar.resx">
+      <DependentUpon>newCar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrderScreen_Milbury_Pelletier.resx">
       <DependentUpon>OrderScreen_Milbury_Pelletier.cs</DependentUpon>
